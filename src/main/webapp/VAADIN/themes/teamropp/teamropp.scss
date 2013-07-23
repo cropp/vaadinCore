@@ -1,0 +1,44 @@
+@import "../reindeer/reindeer.scss";
+@mixin teamropp {
+    @include reindeer;
+
+    /* Default & white style */
+    .v-table-header-wrap,
+    .white .v-table-header-wrap,
+    .v-table-footer-wrap,
+    .white .v-table-footer-wrap,
+    .v-table-header-drag {
+        text-transform: none;
+    }
+
+    /* Replaces standard loading icon with your gif */
+    /*.v-loading-indicator, .v-loading-indicator-delay, .v-loading-indicator-wait {
+        background: url(img/keyhold.gif) no-repeat center;
+        position: fixed !important;
+        width: 128px;
+        height: 128px;
+        top: 50%;
+        left: 50%;
+        z-index: 30000;
+    }*/
+
+    /* Allows Vertical Layouts to scroll when added widgets gets larger than screen */
+    .v-verticallayout > div {
+        overflow-y: auto ! important;
+    }
+
+    .v-headerlayout  {
+        font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
+        font-size: 14px;
+    }
+
+    .v-select-optiongroup-horizontalgroup .v-select-option {
+        display: inline;
+    }
+
+    .v-menubar-menuRight {
+        position: absolute;
+        text-align: right;
+        top: 0;
+    }
+}
